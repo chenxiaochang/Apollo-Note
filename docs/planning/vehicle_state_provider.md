@@ -39,6 +39,7 @@ message VehicleState {
   optional apollo.canbus.Chassis.GearPosition gear = 13;    // 车辆齿轮状态，包含前进、倒车。停车、低速等状态
   optional apollo.canbus.Chassis.DrivingMode driving_mode = 14;  // 驾驶状态，包含手动驾驶、自动驾驶、转向、刹车与油门等状态
   optional apollo.localization.Pose pose = 15;     // 车辆姿态，包含坐标，局部到世界坐标系变换矩阵，线速度(矢量)，线加速度(矢量)等信息。
+  optional double steering_percentage = 16;  // 操舵
 }
 ```
 
